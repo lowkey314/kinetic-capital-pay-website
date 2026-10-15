@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kinetic Capital Pay LLC — Fast, secure payments</title>
+  <meta name="description" content="Kinetic Capital Pay LLC — fast, secure payments and merchant solutions for modern businesses." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#hero" aria-label="Kinetic Capital Pay">
+        <svg width="40" height="40" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <defs>
+            <linearGradient id="g" x1="0" x2="1">
+              <stop stop-color="#00B4D8" offset="0"/>
+              <stop stop-color="#0077B6" offset="1"/>
+            </linearGradient>
+          </defs>
+          <rect x="2" y="2" width="20" height="20" rx="4" fill="url(#g)"/>
+          <path d="M7 12h10v2H7z" fill="#fff"/>
+        </svg>
+        <span class="brand-text">Kinetic Capital Pay</span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+          <span class="hamburger"></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Kinetic Capital Pay LLC</h1>
+          <p class="tagline">Fast, secure payments and capital solutions for growing businesses.</p>
+          <p>
+            Accept payments, access working capital, and manage cash flow with a single platform built for modern merchants.
+          </p>
+          <div class="hero-cta">
+            <a class="btn primary" href="#services">Get started</a>
+            <a class="btn ghost" href="#pricing">View pricing</a>
+          </div>
+        </div>
+        <div class="hero-media" aria-hidden="true">
+          <div class="card">
+            <h3>Live snapshot</h3>
+            <ul>
+              <li><strong>Transactions</strong> 1,254</li>
+              <li><strong>Approval</strong> 98%</li>
+              <li><strong>Settlement</strong> next business day</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container">
+        <h2>About Kinetic Capital Pay</h2>
+        <p>Kinetic Capital Pay provides payments and merchant financing solutions tailored to small-to-medium businesses. We combine fast onboarding, transparent pricing, and robust security so you can focus on growth.</p>
+      </div>
+    </section>
+
+    <section id="services" class="section services">
+      <div class="container">
+        <h2>Services</h2>
+        <div class="grid features">
+          <div class="feature">
+            <h3>Payments</h3>
+            <p>Accept cards, ACH, and wallets with optimized routing and fast settlement.</p>
+          </div>
+          <div class="feature">
+            <h3>Merchant Capital</h3>
+            <p>Flexible cash advances and lines of credit tied to your payment volume.</p>
+          </div>
+          <div class="feature">
+            <h3>Reporting & Dashboard</h3>
+            <p>Real-time reporting, payouts, and reconciliation tools for finance teams.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="section how">
+      <div class="container">
+        <h2>How it works</h2>
+        <ol class="steps">
+          <li><strong>Sign up</strong> — Fast onboarding with identity verification.</li>
+          <li><strong>Integrate</strong> — API, SDKs, or hosted checkout.</li>
+          <li><strong>Accept payments</strong> — Begin accepting payments and access capital products.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="pricing" class="section pricing">
+      <div class="container">
+        <h2>Pricing</h2>
+        <div class="grid pricing-grid">
+          <div class="plan">
+            <h3>Standard</h3>
+            <p class="price">2.9% + $0.30</p>
+            <ul>
+              <li>Card processing</li>
+              <li>Dashboard & reporting</li>
+              <li>Email support</li>
+            </ul>
+            <a class="btn primary" href="#contact">Apply</a>
+          </div>
+          <div class="plan featured">
+            <h3>Growth</h3>
+            <p class="price">Custom rates</p>
+            <ul>
+              <li>Volume pricing</li>
+              <li>Merchant capital offers</li>
+              <li>Priority support</li>
+            </ul>
+            <a class="btn primary" href="#contact">Get quote</a>
+          </div>
+        </div>
+        <p class="small">Custom enterprise plans available — contact sales for integration and large-volume pricing.</p>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section testimonials">
+      <div class="container">
+        <h2>What customers say</h2>
+        <blockquote>
+          "<strong>Kinetic Capital Pay</strong> simplified our reconciliation and gave us reliable cash advances when we needed them." — T. Nguyen, Retailer
+        </blockquote>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Contact & Apply</h2>
+        <p>Questions? Want a demo or pricing? Send us a message and we'll respond within one business day.</p>
+
+        <form id="contactForm" class="contact-form" action="https://formspree.io/f/{your-id}" method="POST">
+          <div class="form-grid">
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" required>
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="_replyto" required>
+            </label>
+            <label class="full">
+              <span>Company</span>
+              <input type="text" name="company">
+            </label>
+            <label class="full">
+              <span>Message</span>
+              <textarea name="message" rows="5" required></textarea>
+            </label>
+          </div>
+          <button class="btn primary" type="submit">Send message</button>
+          <p class="form-note">We respect your privacy. By sending you agree to our <a href="#privacy">privacy policy</a>.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Kinetic Capital Pay LLC. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="#privacy">Privacy</a></li>
+        <li><a href="#terms">Terms</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
