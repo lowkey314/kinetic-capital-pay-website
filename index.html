@@ -33,6 +33,7 @@
         <ul class="nav-menu" id="navMenu">
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
+          <li><a href="#dashboard">Dashboard</a></li>
           <li><a href="#pricing">Pricing</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -51,15 +52,20 @@
           </p>
           <div class="hero-cta">
             <a class="btn primary" href="#services">Get started</a>
-            <a class="btn ghost" href="#pricing">View pricing</a>
+            <a class="btn ghost" href="dashboard.html">Open dashboard</a>
           </div>
         </div>
         <div class="hero-media" aria-hidden="true">
-          <div class="card">
-            <h3>Live snapshot</h3>
+          <div class="card account-preview">
+            <div class="account-header">
+              <span class="eyebrow">Demo account</span>
+              <span class="status-pill success">Active</span>
+            </div>
+            <h3>Total balance</h3>
+            <div class="account-total">$8,000,000</div>
             <ul>
-              <li><strong>Transactions</strong> 1,254</li>
-              <li><strong>Approval</strong> 98%</li>
+              <li><strong>Available</strong> $4,680,000</li>
+              <li><strong>Pending</strong> $1,240,000</li>
               <li><strong>Settlement</strong> next business day</li>
             </ul>
           </div>
@@ -67,10 +73,45 @@
       </div>
     </section>
 
+    <section id="dashboard" class="section dashboard-demo">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Account overview</p>
+            <h2>Dashboard preview</h2>
+          </div>
+          <a class="btn primary" href="dashboard.html">View full dashboard</a>
+        </div>
+
+        <div class="stats-grid">
+          <article class="stat-card">
+            <span>Account balance</span>
+            <strong>$8,000,000</strong>
+            <small>Illustrative demo only</small>
+          </article>
+          <article class="stat-card">
+            <span>Available cash</span>
+            <strong>$4,680,000</strong>
+            <small>+3.4% this month</small>
+          </article>
+          <article class="stat-card">
+            <span>Recent inflow</span>
+            <strong>$1,240,000</strong>
+            <small>3 transactions</small>
+          </article>
+          <article class="stat-card">
+            <span>Outgoing</span>
+            <strong>$860,000</strong>
+            <small>4 disbursements</small>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section id="about" class="section about">
       <div class="container">
         <h2>About Kinetic Capital Pay</h2>
-        <p>Kinetic Capital Pay provides payments and merchant financing solutions tailored to small-to-medium businesses. We combine fast onboarding, transparent pricing, and robust security so you can focus on growth.</p>
+        <p>Kinetic Capital Pay provides payments and merchant financing solutions tailored to small-to-medium businesses. We combine fast onboarding, transparent pricing, and robust security so you can manage growth efficiently.</p>
       </div>
     </section>
 
