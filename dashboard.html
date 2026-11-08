@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kinetic Capital Pay LLC — Dashboard</title>
+  <meta name="description" content="Account dashboard for Kinetic Capital Pay LLC." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dashboard-page">
+  <header class="dashboard-header">
+    <div class="container dashboard-topbar">
+      <a class="brand" href="index.html" aria-label="Kinetic Capital Pay home">
+        <svg width="40" height="40" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <defs>
+            <linearGradient id="g" x1="0" x2="1">
+              <stop stop-color="#00B4D8" offset="0"/>
+              <stop stop-color="#0077B6" offset="1"/>
+            </linearGradient>
+          </defs>
+          <rect x="2" y="2" width="20" height="20" rx="4" fill="url(#g)"/>
+          <path d="M7 12h10v2H7z" fill="#fff"/>
+        </svg>
+        <span class="brand-text">Kinetic Capital Pay</span>
+      </a>
+
+      <div class="header-actions">
+        <button class="btn ghost" id="refreshBtn" type="button">Refresh</button>
+        <button class="btn primary" id="connectBankBtn" type="button">Connect bank</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container dashboard-main">
+    <section class="account-hero">
+      <div class="account-copy">
+        <p class="eyebrow">Account overview</p>
+        <h1>Business operating account</h1>
+        <div class="account-meta">
+          <span>•••• 1048</span>
+          <span>Last refreshed <span id="lastUpdated">2 minutes ago</span></span>
+        </div>
+      </div>
+      <div class="balance-card">
+        <span>Total balance</span>
+        <strong id="totalBalance">$8,000,000.00</strong>
+        <small>Live banking data will replace this placeholder when connected</small>
+      </div>
+    </section>
+
+    <div id="statusMessage" class="status-message" aria-live="polite"></div>
+
+    <section class="summary-grid">
+      <article class="mini-stat">
+        <span>Available</span>
+        <strong id="availableCash">$4,680,000.00</strong>
+        <small>+3.4% this month</small>
+      </article>
+      <article class="mini-stat">
+        <span>Pending</span>
+        <strong id="pendingFunds">$1,240,000.00</strong>
+        <small>3 transactions</small>
+      </article>
+      <article class="mini-stat">
+        <span>Inflow</span>
+        <strong id="totalInflow">$1,240,000.00</strong>
+        <small>Last 7 days</small>
+      </article>
+      <article class="mini-stat">
+        <span>Outgoing</span>
+        <strong id="totalOutflow">$860,000.00</strong>
+        <small>4 disbursements</small>
+      </article>
+    </section>
+
+    <section class="dashboard-grid">
+      <article class="panel">
+        <div class="panel-header">
+          <h2>Recent activity</h2>
+          <a href="#">View all</a>
+        </div>
+        <ul class="transaction-list" id="transactionList">
+          <li>
+            <div>
+              <strong>Client settlement</strong>
+              <small>May 14 • ACH completion</small>
+            </div>
+            <span class="credit">+$420,000</span>
+          </li>
+          <li>
+            <div>
+              <strong>Merchant payout</strong>
+              <small>May 13 • Automated transfer</small>
+            </div>
+            <span class="debit">-$180,000</span>
+          </li>
+          <li>
+            <div>
+              <strong>Processor rebate</strong>
+              <small>May 12 • Card settlement</small>
+            </div>
+            <span class="credit">+$265,000</span>
+          </li>
+        </ul>
+      </article>
+
+      <article class="panel">
+        <div class="panel-header">
+          <h2>Funding sources</h2>
+          <a href="#">Manage</a>
+        </div>
+        <div class="bank-list">
+          <div class="bank-item">
+            <div>
+              <strong>Primary operating account</strong>
+              <small>Wells Fargo • Connected</small>
+            </div>
+            <span class="tag connected">Connected</span>
+          </div>
+          <div class="bank-item">
+            <div>
+              <strong>Reserve account</strong>
+              <small>Chase • Pending verification</small>
+            </div>
+            <span class="tag pending">Pending</span>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
